@@ -9,6 +9,11 @@
  - splah screen added.
  - show alert dialogs when nessesary eg on wrong password,user already log in..
  - show internet error dialog when internet is not available.
+# Demo
+    ![Demo1](screenshots/3.gif)
+    ![Demo2](screenshots/2.gif)
+    ![Demo3](screenshots/1.gif)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
