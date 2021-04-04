@@ -12,7 +12,7 @@ class TextInputForm extends StatelessWidget {
   final textInputAction;
 
   TextInputForm({
-    @required this.s,
+    this.s,
     this.onChange,
     this.validator,
     this.obscureText,

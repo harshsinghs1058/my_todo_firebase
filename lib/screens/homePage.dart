@@ -101,7 +101,7 @@ class _HomePageState extends State<HomePage> {
               centerTitle: true,
               title: Text("My Todo"),
               actions: [
-                FlatButton.icon(
+                TextButton.icon(
                     onPressed: () {
                       Auth().signOut();
                       Navigator.pushReplacement(context,

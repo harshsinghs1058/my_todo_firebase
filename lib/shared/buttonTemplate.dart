@@ -1,13 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ButtonTemp extends StatelessWidget {
-  const ButtonTemp(
-      {Key key,
-      @required this.s,
-      @required this.h,
-      @required this.c,
-      @required this.fun,
-      this.fontColor})
+  const ButtonTemp({Key key, this.s, this.h, this.c, this.fun, this.fontColor})
       : super(key: key);
 
   final String s;
@@ -17,14 +11,17 @@ class ButtonTemp extends StatelessWidget {
   final Color fontColor;
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
+    return ElevatedButton(
       onPressed: () {
         fun();
       },
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
+      style: ElevatedButton.styleFrom(
+        onPrimary: c,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+          // color: c,
+        ),
       ),
-      color: c,
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: h, vertical: 10),
         child: Text(
